@@ -1,0 +1,37 @@
+A summary of the directories in this Supplemental Data archive is below.
+
+NOTE: This is intended as a Supplemental Data archive. Supplemental Data archives have the purpose of archiving, they are not designed to be as tutorials for beginners, which would take a great deal of additional work. 
+
+In order to read/interpret-re-use the code and files archived here, it will take some fairly serious knowledge of phylogenetics, R, and BEAST, and likely some substantial personal effort to puzzle out the changes (changing working directories, installing programs and R packages, etc.) necessary or re-run or re-use these files.  Getting this code to run will take, minimally, installation of the packages and programs used, changing the working directories to match your local machine, and probably decent experience with R and troubleshooting R scripts on different operating systems.
+
+In short: don't email me about problems, without putting in very serious effort on your part first!
+
+Sincerely,
+Nick Matzke
+n.matzke@auckland.ac.nz
+
+NOTE, 2018-04-06: I had to delete all of the gene-tree logs to get this archive under 1 GB, a requirement for GitHub. I also deleted some redundant treeLog.txt files, typically the post-burnin portion of these logfiles is saved as treeLog_wEnd.txt.  Script files probably refer to the "_wEnd.txt" versions, but I haven't double-checked.
+
+NOTE, 2018-04-06: I had to zip various large files to fit the GitHub 100 MB size limit, so go through the directory structure and unzip each zipfile before exploring/using.
+
+
+Summary of directories:
+
+03_r8s_44species_calib2 -- r8s analysis (concatenated, strict clock)
+
+04_Beast2_44_species_calib2 -- Beast2 (concatenated, lognormal relaxed clock) analysis
+
+05_starBeast2_44_species_calib2 -- starBeast2 "divide-and-conquer" analysis (subclade analyses, skeleton tree analysis, merging)
+	v1_subgroup1_var+punct	-- subclade analysis
+	v1_subgroup2_polka			-- subclade analysis
+	v1_subgroup3_plo				-- subclade analysis
+	v1_subgroup4_nanaGrp_v2	-- subclade analysis
+	v1cip										-- skeleton tree analysis
+	v1_combine_subtrees			-- combining the subtrees and the skeleton tree
+
+09_regressions -- Diversification analyses with gamma statistics from different dating runs; regressions of node ages from different dating runs
+
+BEASTmasteR_code_archive -- Archive of the BEASTmasteR code as of 2017-06-19
+
+BioGeoBEARS_code_archive -- Archive of the BioGeoBEARS code as of 2017-06-19
+

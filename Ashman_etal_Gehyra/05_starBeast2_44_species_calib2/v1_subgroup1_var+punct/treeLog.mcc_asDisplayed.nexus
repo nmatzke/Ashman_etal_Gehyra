@@ -1,0 +1,47 @@
+#NEXUS
+[R-package APE, Mon Oct 31 12:09:23 2016]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 17;
+	TAXLABELS
+		cundalensis
+		burrupensis
+		micra2
+		micraU
+		micraL
+		punctata
+		variegata
+		pilbara1
+		pilbara2
+		capensis
+		cryptaBI
+		cryptaM
+		montium
+		minuta1
+		minuta2
+		versicolor4
+		versicolor5
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	cundalensis,
+		2	burrupensis,
+		3	micra2,
+		4	micraU,
+		5	micraL,
+		6	punctata,
+		7	variegata,
+		8	pilbara1,
+		9	pilbara2,
+		10	capensis,
+		11	cryptaBI,
+		12	cryptaM,
+		13	montium,
+		14	minuta1,
+		15	minuta2,
+		16	versicolor4,
+		17	versicolor5
+	;
+	TREE * UNTITLED = [&R] (1:1.080411387,((2:0.8408997704,((3:0.657824276,4:0.657824276):0.07766780071,(5:0.6462444058,6:0.6462444048):0.08924767189):0.1054076944):0.1591194794,(7:0.8611940891,((8:0.2668830641,9:0.2668830641):0.3494078554,(((10:0.4133535046,11:0.4133535046):0.04387908243,(12:0.375630726,13:0.375630726):0.08160186105):0.06074380316,((14:0.2251571406,15:0.2251571406):0.03916848186,(16:0.2061667601,17:0.2061667601):0.0581588624):0.2536507677):0.09831453301):0.2449031696):0.1388251595):0.08039213065):0;
+END;

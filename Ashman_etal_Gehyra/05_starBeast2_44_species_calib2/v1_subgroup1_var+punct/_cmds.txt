@@ -1,0 +1,14 @@
+
+cd /drives/GDrive/__GDrive_projects/2016-07-31_divide_and_conquer_starBEAST/05_Gehyra_106_loci/v1_subgroup1_var+punct/
+
+
+Rscript make_XML_outline_v1_varpunct.R
+
+java -Xms1024m -Xmx1024m -Djava.library.path="$BEAST_LIB:/usr/local/lib" -jar /Applications/BEAST_2.4.3/lib/beast.jar -seed 7543211233 -overwrite runthis_v1.xml 
+
+
+
+java -Xms2048m -Xmx2048m -jar /Applications/BEAST_2.4.3/treeannotator.jar -heights median -burnin 12000 -limit 0 treeLog.txt treeLog.mcc
+
+
+Rscript plotMCC_v3.R
